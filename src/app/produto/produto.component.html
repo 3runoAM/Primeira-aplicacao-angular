@@ -1,0 +1,14 @@
+<h1>Produtos cadastrados</h1>
+<ul>
+  <li style="list-style: none" *ngFor="let produto of listaProdutos"><!--Essa diretiva é usada
+  para repetir um elemento HTML para cada item de uma lista-->
+    <p>Nome: {{produto.nome}}, Preço: {{produto.preco}}</p><!--A interpolação {{}} é usada para
+    exibir o valor de uma variável no HTML-->
+  </li>
+</ul>
+
+<div [ngSwitch]="listaProdutos[1].nome">
+  <div *ngSwitchCase="'Produto 1' ">Valor 1 foi selecionado</div>
+  <div *ngSwitchCase="'Produto 2'">Valor 2 foi selecionado</div>
+  <div *ngSwitchDefault>Nenhum valor selecionado</div>
+</div>
