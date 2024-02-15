@@ -1,1 +1,11 @@
-<p>produto-detalhes works!</p>
+<div class="thumbnail">
+  <img src="http://placehold.it/820x320">
+  <div>
+    <h4 class="float-right">{{produto.preco}}</h4>
+    <h4>{{produto.titulo}}</h4>
+    <p>{{produto.descricao}}</p>
+  </div>
+  <div class="ratings">
+    <p><nga-stars [avaliacao]="produto.avaliacao"></nga-stars></p>
+  </div>
+</div>
