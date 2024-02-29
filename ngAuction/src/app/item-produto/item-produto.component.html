@@ -1,0 +1,13 @@
+<div class="thumbnail">
+  <img src="http://placehold.it/320x150">
+  <div class="caption">
+    <h4 class="float-right"> {{ produto.preco | currency}} </h4>
+    <h4><a [routerLink]="['/products', produto.id]">{{produto.titulo}}</a>
+    </h4>
+    <p>{{produto.descricao}}</p>
+  </div>
+
+  <div class="ratings">
+     <nga-estrelas [avaliacao]="produto.avaliacao"></nga-estrelas>
+  </div>
+</div>

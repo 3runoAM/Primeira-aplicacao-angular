@@ -8,7 +8,7 @@ describe('EstrelasComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EstrelasComponent]
+      declarations: [EstrelasComponent]
     })
     .compileComponents();
     

@@ -8,7 +8,7 @@ describe('CarrosselComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CarrosselComponent]
+      declarations: [CarrosselComponent]
     })
     .compileComponents();
     

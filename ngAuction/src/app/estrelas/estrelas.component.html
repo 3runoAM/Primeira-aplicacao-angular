@@ -1,1 +1,6 @@
-<p>estrelas works!</p>
+<p>
+  <span *ngFor="let isEmpty of estrelas" class="material-icons">
+    {{ isEmpty ? 'star_border' : 'star_rate' }}
+  </span>
+  <span>{{ avaliacao }} estrelas</span>
+</p>
