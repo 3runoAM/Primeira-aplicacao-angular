@@ -11,6 +11,8 @@ import { ItemProdutoComponent } from './item-produto/item-produto.component';
 import { DetalhesProdutoComponent } from './detalhes-produto/detalhes-produto.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { EstrelasComponent } from './estrelas/estrelas.component';
+import {AuctionMaterialModule} from "./auction-material/auction-material.module";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { EstrelasComponent } from './estrelas/estrelas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuctionMaterialModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+nga-carrossel {
+  margin-bottom: 16px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nga-item-produto {
+  margin: 0 8px 16px;
+  flex-basis: calc(100% / 3 - 16px);
+}
